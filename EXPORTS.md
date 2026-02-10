@@ -61,3 +61,23 @@ exports['gs-notification']:ShowNotification(
 
 )
 ```
+
+## ✅ Côté CLIENT
+```lua
+-- Export principal (notifications prédéfinies)
+exports['gs-notification']:ShowNotification(type, titre, message, durée)
+```
+```lua
+-- Export custom (créer vos propres notifications)
+exports['gs-notification']:ShowCustomNotification(icone, bgColor, accentColor, titre, message, durée)
+```
+
+## ✅ Côté SERVER
+-- Export principal (notifications prédéfinies)
+```lua
+exports['gs-notification']:ShowNotification(target, type, titre, message, durée)
+```
+-- Export custom
+```lua
+exports['gs-notification']:ShowCustomNotification(target, icone, bgColor, accentColor, titre, message, durée)
+```
